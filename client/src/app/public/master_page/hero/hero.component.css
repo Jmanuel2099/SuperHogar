@@ -1,0 +1,35 @@
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    
+    
+    /* Background styles */
+    /*background-image: url('http://www.casasensantander.com/wp-content/uploads/2018/01/casas-en-santander.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://www.casasensantander.com/wp-content/uploads/2018/01/casas-en-santander.jpg');*/
+    background-image: url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/09/lavadoras-twinwash-lg-adaptan-ritmo-tu-familia.jpg?itok=XAEVbhAI');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/09/lavadoras-twinwash-lg-adaptan-ritmo-tu-familia.jpg?itok=XAEVbhAI');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+ hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+
+  nav {
+      margin: 5%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 0px 20px;
+  }

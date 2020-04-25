@@ -1,0 +1,147 @@
+
+<h3 class="center-align style-tittle">Contactanos</h3>
+<hr color="#B3D1FA" width="350px">
+<div class="Style-border">
+    <div class="row">
+        <div class="col s5">
+            <form [formGroup]="fgV" (ngSubmit)="sendMessage()">
+                    
+                <div class="row">
+                  <div class="input-field col s6">
+                    <i class="material-icons prefix">face</i>
+                    <input class="validate" formControlName="first" id="first" type="text" >
+                    <label for="first">Nombre</label>
+                    <div class="warning-validation "
+                        *ngIf="fg.first.errors && (fg.first.dirty || fg.first.touched)">
+                          <strong *ngIf="fg.first.errors.required" class="alert-color">
+                            El nombre es requerido!<br />
+                          </strong>
+                          <strong *ngIf="fg.first.errors.minlength" class="alert-color">
+                            El nombre debe tener minimo 5 caractares!<br />
+                          </strong>
+                          <strong *ngIf="fg.first.errors.maxlength" class="alert-color">
+                            El nombre debe tener como minimo 30 caracteres!<br />
+                          </strong>
+                    </div>
+                  </div>
+                  <div class="input-field col s6">
+                    <input class="validate" formControlName="last" id="last" type="text" >
+                    <label for="last">Apellido</label>
+                    <div class="warning-validation"
+                        *ngIf="fg.last.errors && (fg.last.dirty || fg.last.touched)">
+                          <strong *ngIf="fg.last.errors.required"class="alert-color">
+                            El apellido es requerido!<br />
+                          </strong>
+                          <strong *ngIf="fg.last.errors.minlength"class="alert-color">
+                            El apellido debe tener minimo 5 caractares!<br />
+                          </strong>
+                          <strong *ngIf="fg.last.errors.maxlength"class="alert-color">
+                            El apellido debe tener como minimo 30 caracteres!<br />
+                          </strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">mail_outline</i>
+                        <input class="validate" formControlName="email" id="email" type="email" >
+                        <label for="email">E-mail</label>
+                        <div class="warning-validation"
+                            *ngIf="fg.email.errors && (fg.email.dirty || fg.email.touched)">
+                              <strong *ngIf="fg.email.errors.required"class="alert-color">
+                                E-mail es requerido!<br />
+                              </strong>
+                              <strong *ngIf="fg.email.errors.minlength"class="alert-color">
+                                Emial debe tener minimo 5 caractares!<br />
+                              </strong>
+                              <strong *ngIf="fg.email.errors.maxlength"class="alert-color">
+                                Email debe tener como minimo 30 caracteres!<br />
+                              </strong>
+                              <strong *ngIf="fg.message.errors.email"class="alert-color">
+                                Debe estar en formato E-mail!
+                              </strong>
+                        </div>
+                      </div>
+                </div >
+                <div class="row"> 
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">contact_phone</i>
+                        <input class="validate" formControlName="cell" id="cell" type="text" >
+                        <label for="last">Celular</label>
+                        <div class="warning-validation"
+                            *ngIf="fg.cell.errors && (fg.cell.dirty || fg.cell.touched)">
+                            <strong *ngIf="fg.cell.errors.required"class="alert-color">
+                                Numero de celular es requerido!<br />
+                            </strong>
+                            <strong *ngIf="fg.cell.errors.minlength"class="alert-color">
+                                Numero de celualr debe tener minimo 7 caracteres!<br />
+                            </strong>
+                            <strong *ngIf="fg.cell.errors.maxlength"class="alert-color">
+                                Numero de celular debe tener como maximo 10 caractares!<br />
+                            </strong>
+                        </div>
+                    </div>
+                  </div>
+        
+                  
+              <div class="row">
+                  <div class="input-field col s12">
+                    <i class="material-icons prefix">chat_bubble</i>
+                      <textarea formControlName="message" id="message" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Mensaje</label>
+                      <div class="warning-validation"
+                      *ngIf="fg.message.errors && (fg.message.dirty || fg.message.touched)">
+                        <strong *ngIf="fg.message.errors.required" class="alert-color">
+                          Mensaje es requerido!<br />
+                        </strong>
+                        <strong *ngIf="fg.message.errors.minlength"class="alert-color">
+                          Mensage debe tener como minimo 10 caracteres!<br />
+                        </strong>
+                        <strong *ngIf="fg.message.errors.maxlength"class="alert-color">
+                          Mensage debe tener como maximo 200 caracteres!<br />
+                        </strong>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="input-field col s4">
+                      <button [disabled]="fg.first.errors || fg.last.errors || fg.message.errors"
+                          class="btn waves-effect waves-light col s12" type="submit"
+                          style="background-color:#2CC86E ;">Send
+                      </button>
+                  </div>
+              </div>
+            </form>
+        </div>
+        <div class="col s6">
+            <div class="row margin">
+                <div class="col l12 offset-l2 s12">
+                    <div class="row">
+                        <img src="assets/images/iconoSuperHogar.png" class="style-img col s2">
+                        <p class="col s10 style-text">Dedicados a la comercialización Mayorista de Productos para el Hogar y el Consumo.</p>
+                    </div>
+                    <div class="row">
+                        <b class="style-tittle col s1">Cel:</b>
+                        <a class="style-text col s11">+57 322 51787</a>
+                    </div>
+                    <div class="row">
+                        <b class="style-tittle col s1">Tel:</b>
+                        <a class="style-text col s11">+57 3138522917</a>
+                    </div>
+                    <div class="row">
+                        <b class="style-tittle col s4">Caldas-Manizales:</b>
+                        <a class="style-text col s8">Parque Ind. Los Pinos Bodega #11 Sector Terminal Barrio la Enea</a>
+                    </div>
+                    <div class="row">
+                        <b class="style-tittle col s4">Huila-Pitalito:</b>
+                        <a class="style-text col s8">Calle 22ª Sur #1-150 Este, Barrio Bajo Solarte</a>
+                    </div>
+                    <div>
+                      <p class="style-text">
+                        Realizamos despachos a nivel nacional desde nuestros dos centros de distribución. 
+                      </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>

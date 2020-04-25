@@ -1,0 +1,58 @@
+.StyleImg {
+    width:130%;
+    margin-right: 20%;
+}
+.style-text{
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #908E8E ; 
+    margin-left: 20%;
+    margin-right: 5%;
+}
+.style-tittle{
+    font-family: 'Patua One', cursive;
+    color: #6B6B6B; 
+}
+#imgva{
+    width: 80%;
+    margin-left: 5%;
+    
+}
+.border-color{
+    color: #676666;
+}
+.style_icons{
+    width: 150px;
+}
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 25vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    /*background-image: url('http://www.casasensantander.com/wp-content/uploads/2018/01/casas-en-santander.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('http://www.casasensantander.com/wp-content/uploads/2018/01/casas-en-santander.jpg');*/
+    background-image: url('/assets/images/Logo Letra Blanca.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url('/assets/images/Logo Letra Blanca.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }

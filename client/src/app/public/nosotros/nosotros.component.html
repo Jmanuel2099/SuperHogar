@@ -1,0 +1,93 @@
+<div class="container ">
+    <table Class= "responsive_table">
+        <tr>
+                <td >
+                    <img src="assets/images/img1.jpg" class ="StyleImg">
+                </td>
+                <td>
+                    <p class=" center-align style-text">Comercializadora super hogar esta en el negocio de la comercialización en los principales canales,
+                        con productos para el hogar y de consumo.
+                    <p class="center-align style-text">
+                        Realizamos despachos a nivel nacional desde nuestros dos centros
+                        de distribución ubicados en la ciudad de Manizales y en el
+                        municipio de Pitalito en el departamento del Huila.
+                    </p>    
+                    <p class="center-align style-text">
+                        Le entregamos su mercancía en su domicilio principal sin costo
+                        alguno.
+                    </p>
+                </td>
+            </tr>
+    </table>
+</div>
+
+<section class="hero">
+    <div class="hero-inner">
+        <h2>The best option for your home</h2>
+    </div>
+</section>
+<div class = "container">    
+    <table Class= "responsive_table">
+        <tr>
+            <td>
+                <h3 class="center-align style-tittle">Vision</h3>
+            </td>
+            <td>
+                <h3 class="center-align style-tittle">Mision</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="imgva" src="assets/images/vision.gif">
+            </td>
+            <td>
+                <img class="imgva" src="assets/images/mision.gif">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class=" center-align style-text">Consolidarnos como una empresa líder e innovadora que ofrece un
+                    portafolio integral a nuestros clientes.</p>
+            </td>
+            <td>
+                <p class=" center-align style-text">Trabajar de la mano de nuestros grupos de interés para obtener
+                    rentabilidad con responsabilidad y transparencia, agregando valor
+                    superior a la organización.</p>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!--hr class="border-color container"-->
+
+
+<div class="container">
+    <h4 class="style-tittle center-align">Nuestras Bodegas</h4>
+    <div class="row">
+        <div class="col s6">
+            <img src="assets/images/Bodegas/Manizales.png" alt="Manizales"  style="border-radius: 20px;">
+        </div>
+        <div class="col s6">
+            <img src="assets/images/Bodegas/Pitalito.gif" alt="Pitalito"  style="border-radius: 20px;">
+        </div>
+    </div>
+</div>
+
+<hr class="border-color container">
+
+<h4 class="style-tittle container">Marcas comercializadas</h4>
+<table class="container">
+    <tr>
+        <td *ngFor="let p of listaProvedores | paginate: { id: 'pagination1', itemsPerPage: 4, currentPage: p }">
+            <img src="{{p.imagen}}" alt="{{p.nombre}}" class="style_icons">
+        </td>
+    </tr>
+</table>
+<!--div class="row">
+    <div class="col s3" *ngFor="let p of listaProvedores | paginate: { id: 'pagination1', itemsPerPage: 4, currentPage: p }">
+        <img src="{{p.imagen}}" alt="{{p.nombre}}" class="style_icons">
+    </div>
+</div-->
+<pagination-controls id="pagination1" (pageChange)="p = $event" class="container" ></pagination-controls>
+
+

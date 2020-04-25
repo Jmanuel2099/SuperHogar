@@ -1,0 +1,19 @@
+nav{    
+    background: rgb(241, 243, 255);
+    padding: 0px 20px;
+}
+
+a{
+    font-family: 'Archivo Narrow', sans-serif;
+    color: rgb(75, 82, 92);
+}
+
+nav li a:hover{
+    background-color: rgb(73, 147, 243);
+}
+
+img{
+    width: 20%;
+    margin-top: 0.5%;
+    margin-left: 3%;
+}

@@ -76,7 +76,7 @@
 <hr class="border-color container">
 
 <h4 class="style-tittle container">Marcas comercializadas</h4>
-<table class="container">
+<table class="container" style="text-align:center">
     <tr>
         <td *ngFor="let p of listaProvedores | paginate: { id: 'pagination1', itemsPerPage: 4, currentPage: p }">
             <img src="{{p.imagen}}" alt="{{p.nombre}}" class="style_icons">
@@ -88,6 +88,8 @@
         <img src="{{p.imagen}}" alt="{{p.nombre}}" class="style_icons">
     </div>
 </div-->
-<pagination-controls id="pagination1" (pageChange)="p = $event" class="container" ></pagination-controls>
+<pagination-controls id="pagination1" (pageChange)="p = $event" style="text-align:center" ></pagination-controls>
+
+  
 
 
